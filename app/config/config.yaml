@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+database:
+  postgres:
+    host: "postgres"
+    port: 5432
+    user: "postgres"
+    password: "password"
+    dbname: "app_db"
+    sslmode: "disable"
+  mongo:
+    uri: "mongodb://mongo:27017"
+    database: "app_db"
+
+redis:
+  host: "redis"
+  port: 6379
+  password: ""
+  db: 0
+
+logging:
+  log_dir: "./logs"
+
+ollama:
+  url: "http://ollama:11434/api/generate"
+
